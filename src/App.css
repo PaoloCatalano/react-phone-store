@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Oswald", sans-serif !important; /*stiamo usando bootstrap, quindi deve essere sovrascritto con !important*/
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-title {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainYellow) !important;
+}
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cart-icon {
+  /*cursor: pointer;*/
+  font-size: 1.2rem;
+  color: var(--mainYellow);
 }
 
-.App-link {
-  color: #61dafb;
+.btn-remove {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 1.5rem !important;
+  color: var(--mainYellow);
+  border-radius: 1rem 1rem 0 0 ;
+
+}
+.btn-remove:hover {
+  transition: all 0.5s linear;
+  color: RED;
+  background: rgba(243, 184, 107, 0.678);
+  box-shadow: 0.2px 0.2px 4px 4px rgba(243, 184, 107, 0.678);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-green {
+  background: greenyellow !important;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainYellow) !important;
+}
+
+.btn-red {
+  background: tomato !important;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainYellow) !important;
 }
