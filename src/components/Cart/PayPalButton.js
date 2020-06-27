@@ -3,6 +3,7 @@ import PaypalExpressBtn from "react-paypal-express-checkout";
 
 //client: sb-4adm12432003@personal.example.com
 //password: Dj1<T8Qr
+//store from: sb-2up0k2433003@business.example.com
 
 export default class MyApp extends React.Component {
   render() {
@@ -35,7 +36,6 @@ export default class MyApp extends React.Component {
     // Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
 
     const client = {
-      //store from: sb-2up0k2433003@business.example.com
       sandbox: process.env.REACT_APP_applicazione_ID,
       production: "YOUR-PRODUCTION-APP-ID",
     };
